@@ -100,9 +100,10 @@ a:hover {
   }
 
   .footer {
-    text-align center
-    font-weight lighter
     margin 20px auto
+    text-align center
+    font-size small
+    font-weight lighter
 
     a {
       font-weight lighter

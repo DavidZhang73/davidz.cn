@@ -9,8 +9,6 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "stylus": "^0.54.8",
-    "stylus-loader": "^3.0.2",
     "vue": "^2.6.11"
   },
   "devDependencies": {
@@ -25,6 +23,8 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^6.2.2",
+    "stylus": "^0.54.8",
+    "stylus-loader": "^3.0.2",
     "vue-template-compiler": "^2.6.11"
   }
 }
