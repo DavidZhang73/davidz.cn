@@ -4,95 +4,83 @@ export default [
     title: 'Blog',
     url: 'https://blog.davidz.cn/',
     logo: 'https://davidz.cn/img/logo_icon.png',
-    description: '个人博客',
-    check_status: true
+    description: '个人博客'
   },
   {
     id: 'academic',
     title: 'Academic',
     url: 'https://academic.davidz.cn/',
     logo: 'https://davidz.cn/img/academic.svg',
-    description: '个人主页',
-    check_status: true
+    description: '个人主页'
   },
   {
     id: 'vidat',
     title: 'Vidat',
     url: 'https://vidat.davidz.cn/',
     logo: 'https://davidz.cn/img/vidat.png',
-    description: '视频标记',
-    check_status: true
+    description: '视频标记'
   },
   {
     id: 'daty',
     title: 'Daty',
     url: 'https://daty.davidz.cn/',
     logo: 'https://davidz.cn/img/daty.png',
-    description: '文件收集',
-    check_status: true
+    description: '文件收集'
   },
   {
     id: 'git',
     title: 'Git',
     url: 'https://git.davidz.cn/',
     logo: 'https://davidz.cn/img/gitea.png',
-    description: '代码托管',
-    check_status: true
+    description: '代码托管'
   },
   {
     id: 'file',
     title: 'FileBrowser',
     url: 'https://file.davidz.cn/',
     logo: 'https://davidz.cn/img/filebrowser.svg',
-    description: '私有云',
-    check_status: true
+    description: '私有云'
   },
   {
     id: 'kms',
     title: 'KMS',
     url: 'https://kms.davidz.cn/',
     logo: 'https://davidz.cn/img/kms.png',
-    description: '激活服务',
-    check_status: true
+    description: '激活服务'
   },
   {
     id: 'jenkins-update',
     title: 'Jenkins',
     url: 'https://jenkins-update.davidz.cn/',
     logo: 'https://davidz.cn/img/jenkins-update.svg',
-    description: '更新中心',
-    check_status: true
+    description: '更新中心'
   },
   {
     id: 'docker',
     title: 'Docker',
     url: 'https://docker.davidz.cn/',
     logo: 'https://davidz.cn/img/docker.png',
-    description: 'Docker 管理',
-    check_status: true
+    description: 'Docker 管理'
   },
   {
     id: 'netdata',
     title: 'Netdata',
     url: 'https://netdata.davidz.cn/',
     logo: 'https://davidz.cn/img/netdata.svg',
-    description: '服务器状态',
-    check_status: true
+    description: '服务器状态'
   },
   {
     id: '3d',
     title: '3D主页',
     url: 'https://3d.davidz.cn/',
     logo: 'https://davidz.cn/img/logo_icon.png',
-    description: '3D WebGL',
-    check_status: true
+    description: '3D WebGL'
   },
   {
     id: 'archive',
     title: 'Archive',
     url: 'https://archive.davidz.cn/',
     logo: 'https://davidz.cn/img/logo_icon.png',
-    description: '归档',
-    check_status: true
+    description: '归档'
   }
 ]

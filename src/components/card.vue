@@ -11,10 +11,7 @@
 
 export default {
   name: 'card',
-  props: { site: Object },
-  data () {
-    return {}
-  }
+  props: { site: Object }
 }
 </script>
 
@@ -24,7 +21,7 @@ export default {
   border-radius 25px
   background #e4f0fa
   box-shadow 10px 10px 15px #cdd8e1,
-    -10px -10px 15px #ffffff
+  -10px -10px 15px #ffffff
   @media (max-width: 768px) {
     box-shadow 5px 5px 10px #cdd8e1,
     -5px -5px 10px #ffffff
