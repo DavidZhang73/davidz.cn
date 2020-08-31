@@ -88,9 +88,9 @@ export default [
     check_status: true
   },
   {
-    id: 'old',
+    id: 'archive',
     title: 'Archive',
-    url: 'https://www.davidz.cn/',
+    url: 'https://archive.davidz.cn/',
     logo: 'https://davidz.cn/img/logo_icon.png',
     description: '归档',
     check_status: true
