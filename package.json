@@ -26,5 +26,8 @@
     "stylus": "^0.54.8",
     "stylus-loader": "^3.0.2",
     "vue-template-compiler": "^2.6.11"
+  },
+  "gitHooks": {
+    "post-commit": "npm run build && ssh root@davidz.cn rm -rf /docker/nginx/www/ && scp -BCpr ./dist/ root@davidz.cn:/docker/nginx/www/"
   }
 }
