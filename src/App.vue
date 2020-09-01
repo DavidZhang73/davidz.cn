@@ -76,6 +76,7 @@ a:hover {
 
     .logo {
       width 35%
+      filter invert(100%) drop-shadow(10px 10px 10px #cdd8e1) drop-shadow(-10px -10px 10px #ffffff)
       @media (max-width: 768px) {
         width 55%
       }

@@ -29,12 +29,8 @@ export default {
 
   &:hover {
     background #e4f0fa
-    box-shadow 20px 20px 20px #cdd8e1,
-    -20px -20px 20px #ffffff
-    transition: 0.5s ease;
-    @media (max-width: 768px) {
-      box-shadow none
-    }
+    box-shadow inset 5px 5px 10px #cdd8e1,
+    inset -5px -5px 10px #ffffff
   }
 
   .logo {

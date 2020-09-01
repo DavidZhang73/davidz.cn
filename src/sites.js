@@ -18,7 +18,7 @@ export default [
     title: 'Vidat',
     url: 'https://vidat.davidz.cn/',
     logo: 'https://davidz.cn/img/vidat.png',
-    description: '视频标记'
+    description: '视频标注'
   },
   {
     id: 'daty',
@@ -71,10 +71,10 @@ export default [
   },
   {
     id: '3d',
-    title: '3D主页',
+    title: '3D',
     url: 'https://3d.davidz.cn/',
     logo: 'https://davidz.cn/img/logo_icon.png',
-    description: '3D WebGL'
+    description: 'WebGL'
   },
   {
     id: 'archive',
