@@ -28,6 +28,6 @@
     "vue-template-compiler": "^2.6.11"
   },
   "gitHooks": {
-    "post-commit": "npm run build ; ssh root@davidz.cn rm -rf /docker/nginx/www/js/ ; scp -BCpr ./dist/* root@davidz.cn:/docker/nginx/www/"
+    "post-commit": "pwsh script/deploy.ps1"
   }
 }
