@@ -21,6 +21,13 @@ export default [
     description: '视频标注'
   },
   {
+    id: 'vidat2',
+    title: 'Vidat2',
+    url: 'https://vidat2.davidz.cn/',
+    logo: 'https://davidz.cn/img/vidat.png',
+    description: '视频标注2'
+  },
+  {
     id: 'daty',
     title: 'Daty',
     url: 'https://daty.davidz.cn/',
@@ -68,19 +75,5 @@ export default [
     url: 'https://netdata.davidz.cn/',
     logo: 'https://davidz.cn/img/netdata.svg',
     description: '服务器状态'
-  },
-  {
-    id: '3d',
-    title: '3D',
-    url: 'https://3d.davidz.cn/',
-    logo: 'https://davidz.cn/img/logo_icon.png',
-    description: 'WebGL'
-  },
-  {
-    id: 'archive',
-    title: 'Archive',
-    url: 'https://archive.davidz.cn/',
-    logo: 'https://davidz.cn/img/logo_icon.png',
-    description: '归档'
   }
 ]
