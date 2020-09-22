@@ -21,13 +21,6 @@ export default [
     description: '视频标注'
   },
   {
-    id: 'vidat2',
-    title: 'Vidat2',
-    url: 'https://vidat2.davidz.cn/',
-    logo: 'https://davidz.cn/img/vidat.png',
-    description: '视频标注2'
-  },
-  {
     id: 'daty',
     title: 'Daty',
     url: 'https://daty.davidz.cn/',
