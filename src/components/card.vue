@@ -1,5 +1,5 @@
 <template>
-  <a :href="site.url" class="card">
+  <a :href="site.url" class="card" :style="{'background-color': backgroundColor}">
     <div class="logo"
          :style="{background: 'url('+ site.logo +') center / contain no-repeat'}"></div>
     <div class="title">{{ site.title }}</div>
@@ -11,7 +11,24 @@
 
 export default {
   name: 'card',
-  props: { site: Object }
+  props: { site: Object },
+  data () {
+    return {
+      backgroundColor: '#e4f0fa'
+    }
+  },
+  mounted () {
+    const timeout = 3 // s
+    const controller = new AbortController()
+    setTimeout(() => controller.abort(), timeout * 1000)
+    fetch(this.site.url, {
+      mode: 'no-cors',
+      signal: controller.signal
+    })
+      .catch(() => {
+        this.backgroundColor = '#ffdede'
+      })
+  }
 }
 </script>
 
@@ -19,7 +36,6 @@ export default {
 .card {
   padding 12px
   border-radius 25px
-  background #e4f0fa
   box-shadow 10px 10px 15px #cdd8e1,
   -10px -10px 15px #ffffff
   @media (max-width: 768px) {
