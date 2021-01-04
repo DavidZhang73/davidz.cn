@@ -21,6 +21,13 @@ export default [
     description: '视频标注'
   },
   {
+    id: 'papereader',
+    title: 'Papereader',
+    url: 'https://papereader.davidz.cn/',
+    logo: 'https://davidz.cn/img/logo_icon.png',
+    description: '阅读论文'
+  },
+  {
     id: 'daty',
     title: 'Daty',
     url: 'https://daty.davidz.cn/',

@@ -17,7 +17,7 @@
 
 <script>
 import sites from '@/sites'
-import card from '@/components/card'
+import card from '@/components/Card'
 
 export default {
   name: 'App',
