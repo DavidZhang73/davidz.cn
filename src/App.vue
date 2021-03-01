@@ -9,7 +9,7 @@
       <card class="card" v-for="site in sites" :key="site.id" :site="site"></card>
     </div>
     <div class="footer">
-      CopyRight © <a href="https://davidz.cn">DavidZ</a> <a href="https://beian.miit.gov.cn/" target="_blank">鲁ICP备19008089号</a>
+      CopyRight © <a href="https://davidz.cn">DavidZ</a> <a href="https://beian.miit.gov.cn/" target="_blank">鲁ICP备19008089号-1</a>
     </div>
   </div>
 
