@@ -63,6 +63,13 @@ export default [
     description: '更新中心'
   },
   {
+    id: 'rabbitmq',
+    title: 'RabbitMQ',
+    url: 'https://rabbitmq.davidz.cn/',
+    logo: 'https://davidz.cn/img/rabbitmq.svg',
+    description: 'RabbitMQ 管理'
+  },
+  {
     id: 'docker',
     title: 'Docker',
     url: 'https://docker.davidz.cn/',
