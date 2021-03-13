@@ -17,7 +17,7 @@ export default [
     id: 'vidat',
     title: 'Vidat',
     url: 'https://vidat.davidz.cn/',
-    logo: 'https://davidz.cn/img/vidat.png',
+    logo: 'https://davidz.cn/img/vidat.svg',
     description: '视频标注'
   },
   {
