@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024mm" height="1024mm" version="1.1" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+    <g fill="#2496ed" stroke-width=".30827">
+        <rect y="-2.8483e-5" width="495" height="495"/>
+        <rect x="529" y="-2.8483e-5" width="495" height="495"/>
+        <rect x="4.4409e-16" y="529" width="495" height="495"/>
+        <rect x="529" y="529" width="495" height="495"/>
+    </g>
+    <path transform="scale(.26458)" d="m1.21 936.69v-931.43h1868.6v1862.9h-1868.6z" fill="#7fba00"
+          stroke-width="5.7143"/>
+    <g fill="#f25021" stroke-width="5.7143">
+        <path transform="scale(.26458)" d="m2001.2 936.69v-931.43h1868.6v1862.9h-1868.6z"/>
+        <path transform="scale(.26458)" d="m1.21 2933.8v-934.29h1868.6v1868.6h-1868.6z"/>
+        <path transform="scale(.26458)" d="m2001.2 2933.8v-934.29h1868.6v1868.6h-1868.6z"/>
+        <path transform="scale(.26458)" d="m1.21 936.69v-931.43h1868.6v1862.9h-1868.6z"/>
+    </g>
+    <g stroke-width="5.7143">
+        <path transform="scale(.26458)" d="m2001.2 936.69v-931.43h1868.6v1862.9h-1868.6z" fill="#7fba00"/>
+        <path transform="scale(.26458)" d="m1.21 2933.8v-934.29h1868.6v1868.6h-1868.6z" fill="#01a4ef"/>
+        <path transform="scale(.26458)" d="m2001.2 2933.8v-934.29h1868.6v1868.6h-1868.6z" fill="#feb801"/>
+    </g>
+</svg>
