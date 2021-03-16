@@ -6,7 +6,7 @@
       </a>
     </div>
     <div class="body">
-      <card class="card" v-for="site in sites" :key="site.id" :site="site"></card>
+      <card v-for="site in sites" :key="site.id" :site="site"></card>
     </div>
     <div class="footer">
       CopyRight © <a href="https://davidz.cn">DavidZ</a> <a href="https://beian.miit.gov.cn/" target="_blank">鲁ICP备19008089号-1</a>
@@ -63,10 +63,10 @@ a:hover {
 .container {
   display flex
   flex-direction column
-  height 100%
+  justify-content space-between
+  min-height 100vh
 
   .header {
-    flex none
     margin 4% auto
     text-align center
 
@@ -84,24 +84,23 @@ a:hover {
   }
 
   .body {
-    flex auto
-    margin 0 15%
+    margin 0 15vw
     display grid
     grid-template-columns repeat(6, 1fr)
-    grid-gap 7% 4%
+    grid-gap 3vw
     align-content start
     @media (max-width: 1367px) {
       margin 0 5%
     }
     @media (max-width: 768px) {
-      margin 0 7%
+      margin 0 7vw
       grid-template-columns repeat(3, 1fr)
-      grid-gap 5% 7%
+      grid-gap 5vw
     }
   }
 
   .footer {
-    margin 20px auto
+    margin 20px auto 20px auto
     text-align center
     font-size small
     font-weight lighter
