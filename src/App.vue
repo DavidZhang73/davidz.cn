@@ -67,7 +67,7 @@ a:hover {
   min-height 100vh
 
   .header {
-    margin 4% auto
+    margin 4vw auto 2vw auto
     text-align center
 
     @media (max-width: 768px) {
