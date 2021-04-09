@@ -23,7 +23,7 @@ export default [
   {
     id: 'papereader',
     title: 'Papereader',
-    url: 'https://papereader.davidz.cn/',
+    url: 'https://papereader.cn/',
     logo: '/img/logo.svg',
     description: '阅读论文'
   },
