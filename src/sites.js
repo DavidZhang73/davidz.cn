@@ -31,7 +31,7 @@ export default [
     id: 'licaibu',
     title: '理财簿',
     url: 'https://licaibu.davidz.cn/',
-    logo: '/img/logo.png',
+    logo: '/img/logo.svg',
     description: '记录理财'
   },
   {
