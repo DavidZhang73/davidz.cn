@@ -28,11 +28,11 @@ export default [
     description: '阅读论文'
   },
   {
-    id: 'daty',
-    title: 'Daty',
-    url: 'https://daty.davidz.cn/',
-    logo: '/img/daty.png',
-    description: '文件收集'
+    id: 'licaibu',
+    title: '理财簿',
+    url: 'https://licaibu.davidz.cn/',
+    logo: '/img/logo.png',
+    description: '记录理财'
   },
   {
     id: 'git',
