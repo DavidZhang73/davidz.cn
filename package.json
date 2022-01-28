@@ -1,6 +1,6 @@
 {
   "name": "davidz.cn",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -26,8 +26,5 @@
     "stylus": "^0.54.8",
     "stylus-loader": "^3.0.2",
     "vue-template-compiler": "^2.6.11"
-  },
-  "gitHooks": {
-    "post-commit": "pwsh script/deploy.ps1"
   }
 }
