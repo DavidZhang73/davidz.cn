@@ -21,11 +21,18 @@ export default [
     description: '视频标注'
   },
   {
-    id: 'papereader',
-    title: 'Papereader',
-    url: 'https://papereader.cn/',
-    logo: '/img/logo.svg',
-    description: '阅读论文'
+    id: 'vidat2',
+    title: 'Vidat2',
+    url: 'https://vidat2.davidz.cn/',
+    logo: '/img/vidat.svg',
+    description: '视频标注'
+  },
+  {
+    id: 'mturk',
+    title: 'MTurk',
+    url: 'https://mturk.davidz.cn/',
+    logo: '/img/vidat.svg',
+    description: 'MTurk'
   },
   {
     id: 'licaibu',
@@ -61,13 +68,6 @@ export default [
     url: 'https://jenkins-update.davidz.cn/',
     logo: '/img/jenkins-update.svg',
     description: '更新中心'
-  },
-  {
-    id: 'rabbitmq',
-    title: 'RabbitMQ',
-    url: 'https://rabbitmq.davidz.cn/',
-    logo: '/img/rabbitmq.svg',
-    description: 'RabbitMQ 管理'
   },
   {
     id: 'docker',
