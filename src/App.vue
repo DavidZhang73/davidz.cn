@@ -1,6 +1,6 @@
 <template>
   <main class="flex flex-col min-h-[100vh] px-4 sm:px-8 md:px-16 lg:px-32 2xl:px-64">
-    <header class="py-28 md:py-20 lg:py-16">
+    <header class="py-28 md:py-20 lg:py-14">
       <img
           class="mx-auto filter drop-shadow-logo dark:drop-shadow-dark-none invert dark:invert-[80%] dark:drop-shadow-none block w-2/3 sm:w-1/2 md:w-2/5"
           alt="logo"
