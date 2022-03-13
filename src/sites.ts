@@ -1,4 +1,12 @@
-export default [
+interface Site {
+  id: String,
+  title: String,
+  url: String,
+  logo: String,
+  description: String,
+}
+
+const siteList: Array<Site> = [
   {
     id: 'blog',
     title: 'Blog',
@@ -84,3 +92,6 @@ export default [
     description: '服务器状态'
   }
 ]
+
+export { Site }
+export default siteList
