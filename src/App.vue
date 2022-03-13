@@ -7,7 +7,7 @@
           src="/img/davidz.svg"
       />
       <div
-          class="absolute top-6 right-6 cursor-pointer h-8 text-white"
+          class="absolute top-6 right-6 cursor-pointer h-8 text-white dark:text-gray-300"
           :title="isDark ? 'Dark' : 'Light'"
           @click="toggleMode"
       >
