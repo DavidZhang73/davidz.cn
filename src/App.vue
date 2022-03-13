@@ -7,7 +7,7 @@
           src="/img/davidz.svg"
       />
       <div
-          class="absolute top-6 right-6 cursor-pointer h-8 text-white dark:text-gray-300"
+          class="absolute top-6 right-6 cursor-pointer h-8 w-8 text-white dark:text-gray-300"
           :title="isDark ? 'Dark' : 'Light'"
           @click="toggleMode"
       >
@@ -77,6 +77,11 @@ const setDarkMode = (isDark: Boolean) => {
     document.documentElement.classList.remove('dark')
   }
 }
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
+      isDark.value = event.matches
+      setDarkMode(event.matches)
+    }
+)
 setDarkMode(isDark.value)
 const toggleMode = () => {
   isDark.value = !isDark.value
