@@ -1,9 +1,9 @@
 interface Site {
-  id: String,
-  title: String,
-  url: String,
-  logo: String,
-  description: String,
+  id: string,
+  title: string,
+  url: string,
+  logo: string,
+  description: string,
 }
 
 const siteList: Array<Site> = [
