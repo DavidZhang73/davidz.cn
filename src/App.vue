@@ -6,7 +6,7 @@
           alt="logo"
           src="/img/davidz.svg"
       />
-      <DarkModeIconToggle class="absolute top-6 right-6"/>
+      <DarkModeToggle class="absolute top-20 right-0 md:top-10 md:right-4"/>
     </header>
     <section class="flex-grow">
       <div class="grid grid-cols-3 gap-4 sm:grid-cols-4 sm:gap-6 md:grid-cols-5 md:gap-8 lg:grid-cols-6 lg:gap-10 2lg:gap-11">
@@ -31,7 +31,7 @@
     lang="ts"
 >
 import Card from './components/Card.vue'
-import DarkModeIconToggle from './components/DarkModeIconToggle.vue'
+import DarkModeToggle from './components/DarkModeMatterToggle.vue'
 import sites from './sites'</script>
 
 <style>
