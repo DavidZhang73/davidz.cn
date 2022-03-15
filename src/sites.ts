@@ -25,7 +25,7 @@ const siteList: Array<Site> = [
     id: 'vidat',
     title: 'Vidat',
     url: 'https://vidat.davidz.cn/',
-    logo: '/img/vidat.svg',
+    logo: '/img/anu.svg',
     description: '视频标注'
   },
   {
@@ -39,7 +39,7 @@ const siteList: Array<Site> = [
     id: 'mturk',
     title: 'MTurk',
     url: 'https://mturk.davidz.cn/',
-    logo: '/img/vidat.svg',
+    logo: '/img/anu.svg',
     description: 'MTurk'
   },
   {
