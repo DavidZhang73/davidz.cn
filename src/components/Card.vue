@@ -12,7 +12,14 @@
   >
     <img
         class="w-full aspect-square dark:filter dark:brightness-75 transition-[filter] duration-1000"
+        :class="{'dark:hidden': site.logoDark}"
         :src="site.logo"
+        alt="thumbnail"
+    />
+    <img
+        class="hidden w-full aspect-square dark:filter dark:brightness-75 transition-[filter] duration-1000"
+        :class="{'dark:block': site.logoDark}"
+        :src="site.logoDark"
         alt="thumbnail"
     />
     <div class="hidden sm:block pt-2 lg:pb-1 text-center lg:text-left">{{ site.title }}</div>

@@ -3,6 +3,7 @@ interface Site {
   title: string,
   url: string,
   logo: string,
+  logoDark?: string,
   description: string,
 }
 
@@ -33,6 +34,7 @@ const siteList: Array<Site> = [
     title: 'Vidat2',
     url: 'https://vidat2.davidz.cn/',
     logo: '/img/vidat.svg',
+    logoDark: '/img/vidat-dark.svg',
     description: '视频标注'
   },
   {
