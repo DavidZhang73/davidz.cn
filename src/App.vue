@@ -48,7 +48,7 @@ import sites from './sites'</script>
   stroke-linejoin: round;
   stroke-dasharray: 4738.33203125;
   stroke-dashoffset: 4738.33203125;
-  animation: 3s linear outline, 3s linear fill;
+  animation: 2s linear outline, 2s linear fill;
   animation-fill-mode: forwards;
 }
 
