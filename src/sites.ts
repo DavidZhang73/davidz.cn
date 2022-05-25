@@ -23,13 +23,6 @@ const siteList: Array<Site> = [
     description: '个人主页'
   },
   {
-    id: 'vidat',
-    title: 'Vidat',
-    url: 'https://vidat.davidz.cn/',
-    logo: '/img/anu.svg',
-    description: '视频标注'
-  },
-  {
     id: 'vidat2',
     title: 'Vidat2',
     url: 'https://vidat2.davidz.cn/',
@@ -43,6 +36,13 @@ const siteList: Array<Site> = [
     url: 'https://mturk.davidz.cn/',
     logo: '/img/anu.svg',
     description: 'MTurk'
+  },
+  {
+    id: 'umami',
+    title: 'Umami',
+    url: 'https://umami.davidz.cn/',
+    logo: '/img/umami.svg',
+    description: '访问统计'
   },
   {
     id: 'licaibu',
