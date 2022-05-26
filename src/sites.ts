@@ -42,6 +42,7 @@ const siteList: Array<Site> = [
     title: 'Umami',
     url: 'https://umami.davidz.cn/',
     logo: '/img/umami.svg',
+    logoDark: '/img/umami-dark.svg',
     description: '访问统计'
   },
   {
