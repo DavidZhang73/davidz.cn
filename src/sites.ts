@@ -31,11 +31,11 @@ const siteList: Array<Site> = [
     description: '视频标注'
   },
   {
-    id: 'mturk',
-    title: 'MTurk',
-    url: 'https://mturk.davidz.cn/',
-    logo: '/img/anu.svg',
-    description: 'MTurk'
+    id: 'iaw',
+    title: 'IAW',
+    url: 'https://iaw.davidz.cn/',
+    logo: '/img/logo.svg',
+    description: '数据集'
   },
   {
     id: 'umami',

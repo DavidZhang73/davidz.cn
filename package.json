@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "caniuse-lite": "^1.0.30001470",
     "matter-js": "^0.18.0",
     "vue": "^3.2.25"
   },
