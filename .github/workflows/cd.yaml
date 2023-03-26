@@ -15,6 +15,12 @@ jobs:
         with:
           node-version: '14'
           cache: 'npm'
+      - uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
       - name: Install Dependencies
         run: npm install
       - name: Build
