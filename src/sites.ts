@@ -74,11 +74,11 @@ const siteList: Array<Site> = [
     description: '激活服务'
   },
   {
-    id: 'jenkins-update',
-    title: 'Jenkins',
-    url: 'https://jenkins-update.davidz.cn/',
-    logo: '/img/jenkins-update.svg',
-    description: '更新中心'
+    id: 'mpusher',
+    title: 'MPusher',
+    url: 'https://mpusher.davidz.cn/',
+    logo: '/img/mpusher.png',
+    description: '消息推送'
   },
   {
     id: 'docker',
