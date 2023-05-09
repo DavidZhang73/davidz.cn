@@ -77,7 +77,7 @@ const siteList: Array<Site> = [
     id: 'mpusher',
     title: 'MPusher',
     url: 'https://mpusher.davidz.cn/',
-    logo: '/img/mpusher.png',
+    logo: '/img/mpusher.svg',
     description: '消息推送'
   },
   {
