@@ -9,13 +9,13 @@ jobs:
   build-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@main
       - name: Setup Node.js environment
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@main
         with:
-          node-version: '14'
+          node-version: '18'
           cache: 'npm'
-      - uses: actions/cache@v2
+      - uses: actions/cache@main
         with:
           path: node_modules
           key: ${{ runner.os }}-node-${{ hashFiles('**/pnpm-lock.yaml') }}
