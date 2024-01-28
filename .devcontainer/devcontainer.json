@@ -1,0 +1,6 @@
+{
+  "name": "davidz.cn-devcontainer",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node",
+  "features": {},
+  "postCreateCommand": "npm ci"
+}
