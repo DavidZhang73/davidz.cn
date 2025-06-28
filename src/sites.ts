@@ -30,6 +30,13 @@ const siteList: Array<Site> = [
     description: '演示文稿'
   },
   {
+    id: 'projectmay',
+    title: 'ProjectMay',
+    url: 'https://projectmay.davidz.cn/',
+    logo: '/img/projectmay.svg',
+    description: '异步编排'
+  },
+  {
     id: 'licaibu',
     title: '理财簿',
     url: 'https://licaibu.davidz.cn/',
@@ -66,13 +73,13 @@ const siteList: Array<Site> = [
     logoDark: '/img/vidat-dark.svg',
     description: '视频标注'
   },
-  {
-    id: 'iaw',
-    title: 'IAW',
-    url: 'https://iaw.davidz.cn/',
-    logo: '/img/logo.svg',
-    description: '数据集'
-  },
+  // {
+  //   id: 'iaw',
+  //   title: 'IAW',
+  //   url: 'https://iaw.davidz.cn/',
+  //   logo: '/img/logo.svg',
+  //   description: '数据集'
+  // },
   {
     id: 'kms',
     title: 'KMS',
