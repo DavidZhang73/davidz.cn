@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  color-scheme: light;
+  --grid-line-color: color-mix(in oklab, rgb(15 23 42) 10%, transparent);
+  --gutter-width: 2.5rem;
+}
+
+.dark {
+  color-scheme: dark;
+  --grid-line-color: color-mix(in oklab, rgb(226 232 240) 12%, transparent);
+}
+
+@layer base {
+  body {
+    @apply bg-white text-slate-900 antialiased;
+  }
+
+  .dark body {
+    @apply bg-slate-950 text-slate-100;
+  }
+}
+
+@utility line-y {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    left: -100vw;
+    width: 200vw;
+    height: 1px;
+    background: var(--grid-line-color);
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+}

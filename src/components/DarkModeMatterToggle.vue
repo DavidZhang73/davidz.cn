@@ -1,16 +1,13 @@
 <template>
-  <div>
-    <div
-      class="relative cursor-grab filter invert dark:invert-[80%]"
-      ref="canvas"
-    ></div>
+  <div class="relative">
+    <div class="cursor-grab filter invert-0 dark:invert" ref="canvas"></div>
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      class="absolute w-full inset-x-0 top-[-20px] mx-auto h-10 text-white dark:text-gray-300 cursor-pointer"
+      class="absolute w-full inset-x-0 -top-5 mx-auto h-10 text-slate-900 dark:text-slate-200 cursor-pointer"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
-      stroke-width="2"
+      stroke-width="1.5"
       @click="toggleMode"
     >
       <path
@@ -76,17 +73,26 @@ const {
   Events
 } = Matter
 onMounted(() => {
+  const devicePixelRatio = Math.min(window.devicePixelRatio || 1, 2)
   // create engine
   const engine = Engine.create()
   const world = engine.world
+  const worldWidth = 500
+  const worldHeight = 1000
+  const categoryWorld = 0x0001
+  const categoryHandler = 0x0002
+  const categoryCord = 0x0004
+
+  engine.gravity.y = 0.9
 
   // create renderer
   const render = Render.create({
     element: canvas.value,
     engine: engine,
     options: {
-      width: isDebug ? 250 : 70,
-      height: isDebug ? 500 : 140,
+      width: 140,
+      height: 140,
+      pixelRatio: devicePixelRatio,
       showVelocity: isDebug,
       wireframes: isDebug,
       background: 'transparent'
@@ -108,11 +114,13 @@ onMounted(() => {
     0,
     0,
     function (x: number, y: number) {
-      return Bodies.rectangle(x, y - ((y - 100) / 20) * 7, 20, 50, {
-        collisionFilter: { group: group },
-        chamfer: { radius: 5 },
+      return Bodies.rectangle(x, y - ((y - 100) / 20) * 7, 14, 40, {
+        collisionFilter: { group: group, category: categoryCord },
+        chamfer: { radius: 4 },
         density: 0.005,
-        frictionAir: 0.05,
+        frictionAir: 0.005,
+        friction: 0.02,
+        frictionStatic: 0.1,
         render: {
           fillStyle: '#000000'
         }
@@ -123,39 +131,100 @@ onMounted(() => {
     stiffness: 0.9,
     length: 0,
     angularStiffness: 0,
+    damping: 0.1,
     render: {
       visible: false
     }
   })
-  const handler = Bodies.circle(250, 800, 40, {
-    collisionFilter: { group: group },
+  const handler = Bodies.circle(250, 800, 38, {
+    collisionFilter: {
+      group: group,
+      category: categoryHandler,
+      mask: categoryWorld | categoryCord
+    },
+    friction: 0.02,
+    frictionStatic: 0.1,
+    frictionAir: 0.005,
+    restitution: 0.25,
     render: {
       fillStyle: '#000000'
     }
   })
-  const wallThick = 10
-  const sensor = Bodies.rectangle(0, 800 - wallThick / 2, 1000, wallThick, {
-    isStatic: true,
-    render: { visible: isDebug }
+  const cordAnchorOffset = 25
+  cord.bodies.forEach(body => {
+    Body.setPosition(body, {
+      x: body.position.x,
+      y: body.position.y + cordAnchorOffset
+    })
   })
+  const lastBody = cord.bodies.at(-1)
+  if (lastBody) {
+    Body.setPosition(handler, {
+      x: lastBody.position.x,
+      y: lastBody.position.y + 38
+    })
+  }
+  const wallThick = 100
+  const sensorHeight = 10
+  const sensorOffset = 100
+  const sensor = Bodies.rectangle(
+    worldWidth / 2,
+    worldHeight - wallThick - sensorHeight / 2 - sensorOffset,
+    worldWidth,
+    sensorHeight,
+    {
+      isStatic: true,
+      isSensor: true,
+      collisionFilter: { category: categoryWorld },
+      render: { visible: isDebug }
+    }
+  )
   const walls = Composite.create({
     bodies: [
-      Bodies.rectangle(0, wallThick / 2, 1000, wallThick, {
-        isStatic: true,
-        render: { visible: isDebug }
-      }),
-      Bodies.rectangle(0, 1000 - wallThick / 2, 1000, wallThick, {
-        isStatic: true,
-        render: { visible: isDebug }
-      }),
-      Bodies.rectangle(wallThick / 2, 0, wallThick, 2000, {
-        isStatic: true,
-        render: { visible: isDebug }
-      }),
-      Bodies.rectangle(500 - wallThick / 2, 0, wallThick, 2000, {
-        isStatic: true,
-        render: { visible: isDebug }
-      })
+      Bodies.rectangle(
+        worldWidth / 2,
+        wallThick / 2,
+        worldWidth + wallThick * 2,
+        wallThick,
+        {
+          isStatic: true,
+          collisionFilter: { category: categoryWorld },
+          render: { visible: isDebug }
+        }
+      ),
+      Bodies.rectangle(
+        worldWidth / 2,
+        worldHeight - wallThick / 2,
+        worldWidth + wallThick * 2,
+        wallThick,
+        {
+          isStatic: true,
+          collisionFilter: { category: categoryWorld },
+          render: { visible: isDebug }
+        }
+      ),
+      Bodies.rectangle(
+        -wallThick / 2,
+        worldHeight / 2,
+        wallThick,
+        worldHeight + wallThick * 2,
+        {
+          isStatic: true,
+          collisionFilter: { category: categoryWorld },
+          render: { visible: isDebug }
+        }
+      ),
+      Bodies.rectangle(
+        worldWidth + wallThick / 2,
+        worldHeight / 2,
+        wallThick,
+        worldHeight + wallThick * 2,
+        {
+          isStatic: true,
+          collisionFilter: { category: categoryWorld },
+          render: { visible: isDebug }
+        }
+      )
     ]
   })
   Composite.add(world, [
@@ -168,6 +237,7 @@ onMounted(() => {
       stiffness: 0.9,
       // @ts-ignore
       angularStiffness: 0.7,
+      damping: 0.1,
       render: {
         visible: false
       }
@@ -175,13 +245,14 @@ onMounted(() => {
     handler,
     Constraint.create({
       bodyA: cord.bodies.at(-1),
-      pointA: { x: 0, y: 25 },
+      pointA: { x: 0, y: 20 },
       bodyB: handler,
-      pointB: { x: 0, y: 0 },
+      pointB: { x: 0, y: -18 },
       length: 0,
       stiffness: 0.9,
       // @ts-ignore
       angularStiffness: 0.7,
+      damping: 0.1,
       render: {
         visible: false
       }
@@ -200,7 +271,8 @@ onMounted(() => {
       render: {
         visible: false
       }
-    }
+    },
+    collisionFilter: { mask: categoryHandler }
   })
 
   Composite.add(engine.world, mouseConstraint)
@@ -235,7 +307,10 @@ onMounted(() => {
             changedTouches: touchEvent.touches
           })
         )
-      if (pair.bodyA === handler && pair.bodyB === sensor) {
+      if (
+        (pair.bodyA === handler && pair.bodyB === sensor) ||
+        (pair.bodyB === handler && pair.bodyA === sensor)
+      ) {
         toggleMode()
         break
       }
@@ -248,7 +323,7 @@ onMounted(() => {
   // fit the render viewport to the scene
   Render.lookAt(render, {
     min: { x: 0, y: 0 },
-    max: { x: 500, y: 1000 }
+    max: { x: worldWidth, y: worldHeight }
   })
 })
 </script>

@@ -13,18 +13,17 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@main
         with:
-          node-version: '18'
-          cache: 'npm'
-      - uses: actions/cache@main
+          node-version: '22'
+          cache: 'pnpm'
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
         with:
-          path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          version: 10.24.0
+          run_install: false
       - name: Install Dependencies
-        run: npm install
+        run: pnpm install --frozen-lockfile
       - name: Build
-        run: npm run build
+        run: pnpm run build
       - name: Deploy with ssh
         uses: easingthemes/ssh-deploy@main
         env:
