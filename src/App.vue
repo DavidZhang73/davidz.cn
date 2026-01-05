@@ -1,6 +1,6 @@
 <template>
   <div
-    class="grid flex-1 grid-rows-[1fr_auto] grid-cols-[1fr_var(--gutter-width)_minmax(0,var(--breakpoint-2xl))_var(--gutter-width)_1fr] [--gutter-width:--spacing(6)] lg:[--gutter-width:--spacing(10)]"
+    class="grid flex-1 grid-rows-[1fr_auto] overflow-x-hidden grid-cols-[1fr_var(--gutter-width)_minmax(0,var(--breakpoint-2xl))_var(--gutter-width)_1fr] [--gutter-width:--spacing(6)] lg:[--gutter-width:--spacing(10)]"
   >
     <div
       class="col-start-2 row-span-full row-start-1 max-sm:hidden border-x border-x-(--grid-line-color) bg-size-[10px_10px] bg-fixed bg-[repeating-linear-gradient(315deg,var(--grid-line-color)_0,var(--grid-line-color)_1px,transparent_0,transparent_50%)]"
@@ -9,7 +9,7 @@
       class="col-start-4 row-span-full row-start-1 max-sm:hidden border-x border-x-(--grid-line-color) bg-size-[10px_10px] bg-fixed bg-[repeating-linear-gradient(315deg,var(--grid-line-color)_0,var(--grid-line-color)_1px,transparent_0,transparent_50%)]"
     ></div>
     <div class="col-start-3 min-h-dvh grid grid-rows-[auto_1fr_auto]">
-      <header class="relative line-y flex items-center justify-center py-10">
+      <div class="relative line-y flex items-center justify-center py-10">
         <svg
           class="max-w-80 md:max-w-120 fill-current text-slate-900 dark:text-slate-100"
           xmlns="http://www.w3.org/2000/svg"
@@ -22,8 +22,8 @@
         <div class="absolute inset-0 flex items-center justify-end">
           <DarkModeMatterToggle class="mt-15 -mr-15 sm:-mr-5 lg:mr-0" />
         </div>
-      </header>
-      <main class="mt-4 md:mt-6 lg:mt-10 relative">
+      </div>
+      <div class="mt-4 md:mt-6 lg:mt-10 relative">
         <div
           class="pointer-events-none absolute inset-0 z-10 grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-4 md:gap-6 lg:gap-10"
         >
@@ -58,8 +58,8 @@
             :site="site"
           />
         </div>
-      </main>
-      <footer class="line-y h-30 flex items-center justify-center">
+      </div>
+      <div class="line-y h-30 flex items-center justify-center">
         <div
           class="line-y text-xs/6 tracking-wide text-slate-600 dark:text-slate-400 leading-6 lg:leading-10"
         >
@@ -69,7 +69,7 @@
             >鲁ICP备19008089号-1</a
           >
         </div>
-      </footer>
+      </div>
     </div>
   </div>
 </template>
