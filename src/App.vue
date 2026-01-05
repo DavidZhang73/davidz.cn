@@ -20,7 +20,7 @@
           />
         </svg>
         <div class="absolute inset-0 flex items-center justify-end">
-          <DarkModeMatterToggle class="mt-20 -mr-15 sm:-mr-5 lg:mr-0" />
+          <DarkModeMatterToggle class="mt-15 -mr-15 sm:-mr-5 lg:mr-0" />
         </div>
       </header>
       <main class="mt-4 md:mt-6 lg:mt-10 relative">
