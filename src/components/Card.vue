@@ -20,7 +20,7 @@
         :alt="site.title"
       />
     </div>
-    <div class="px-4 py-2 sm:px-2">
+    <div class="px-4 py-2 sm:px-2 text-center md:text-left">
       <p class="text-sm/6 font-medium">{{ site.title }}</p>
       <p
         class="font-mono text-xs/6 tracking-wide text-slate-600 dark:text-slate-400"
