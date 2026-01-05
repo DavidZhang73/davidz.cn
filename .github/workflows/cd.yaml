@@ -2,7 +2,7 @@ name: Continuous Deployment
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
 
 jobs:
@@ -10,16 +10,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
-      - name: Setup Node.js environment
-        uses: actions/setup-node@main
-        with:
-          node-version: '22'
-          cache: 'pnpm'
       - name: Setup pnpm
         uses: pnpm/action-setup@v3
         with:
           version: 10.24.0
           run_install: false
+      - name: Setup Node.js environment
+        uses: actions/setup-node@main
+        with:
+          node-version: '22'
+          cache: 'pnpm'
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
       - name: Build
@@ -28,8 +28,8 @@ jobs:
         uses: easingthemes/ssh-deploy@main
         env:
           SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
-          ARGS: "-rltgoDzvO --delete"
-          SOURCE: "dist/"
+          ARGS: '-rltgoDzvO --delete'
+          SOURCE: 'dist/'
           REMOTE_HOST: davidz.cn
           REMOTE_USER: root
           TARGET: /docker/nginx/www/
