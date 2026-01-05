@@ -1,6 +1,6 @@
 <template>
   <div
-    class="grid flex-1 grid-rows-[1fr_auto] overflow-clip grid-cols-[1fr_var(--gutter-width)_minmax(0,var(--breakpoint-2xl))_var(--gutter-width)_1fr] [--gutter-width:--spacing(6)] lg:[--gutter-width:--spacing(10)]"
+    class="grid flex-1 grid-rows-[1fr_auto] grid-cols-[1fr_var(--gutter-width)_minmax(0,var(--breakpoint-2xl))_var(--gutter-width)_1fr] [--gutter-width:--spacing(6)] lg:[--gutter-width:--spacing(10)]"
   >
     <div
       class="col-start-2 row-span-full row-start-1 max-sm:hidden border-x border-x-(--grid-line-color) bg-size-[10px_10px] bg-fixed bg-[repeating-linear-gradient(315deg,var(--grid-line-color)_0,var(--grid-line-color)_1px,transparent_0,transparent_50%)]"
@@ -61,7 +61,7 @@
       </main>
       <footer class="line-y h-30 flex items-center justify-center">
         <div
-          class="line-y text-xs/6 tracking-wide text-slate-600 dark:text-slate-400 leading-4 md:leading-6 lg:leading-10"
+          class="line-y text-xs/6 tracking-wide text-slate-600 dark:text-slate-400 leading-6 lg:leading-10"
         >
           CopyRight © <a href="https://davidz.cn">DavidZ</a>
           •
