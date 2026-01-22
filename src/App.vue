@@ -54,7 +54,6 @@
           class="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-4 md:gap-6 lg:gap-10"
         >
           <Card
-            class="block transition hover:bg-slate-900/5 dark:hover:bg-white/5 nth-[6n+1]:line-y"
             v-for="site in sites"
             :key="site.id"
             :site="site"
