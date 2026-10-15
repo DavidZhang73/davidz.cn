@@ -11,7 +11,7 @@
     <div class="col-start-3 min-h-dvh grid grid-rows-[auto_1fr_auto]">
       <div class="relative line-y flex items-center justify-center py-10">
         <div class="absolute inset-0 flex items-center justify-end">
-          <DarkModeMatterToggle class="mt-15 -mr-15 sm:-mr-5 lg:mr-0" />
+          <ThemeToggle class="mt-15 -mr-15 sm:-mr-5 lg:mr-0" />
         </div>
         <div class="w-full max-w-80 md:max-w-110">
           <svg
@@ -54,7 +54,8 @@
           class="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-4 md:gap-6 lg:gap-10"
         >
           <Card
-            v-for="site in sites"
+            v-for="(site, index) in sites"
+            :eager="index < 3"
             :key="site.id"
             :site="site"
           />
@@ -77,6 +78,6 @@
 
 <script setup lang="ts">
 import Card from './components/Card.vue'
-import DarkModeMatterToggle from './components/DarkModeMatterToggle.vue'
+import ThemeToggle from './components/ThemeToggle.vue'
 import sites from './sites'
 </script>

@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "vite",
     "tsc": "vue-tsc --noEmit",
-    "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "build": "vue-tsc --noEmit && vite build && vite build --ssr src/entry-server.ts --outDir .ssr && node scripts/prerender.mjs",
+    "preview": "vite preview",
+    "test": "node scripts/check_build.mjs"
   },
   "dependencies": {
     "matter-js": "^0.20.0",
@@ -22,6 +23,7 @@
     "tailwindcss": "^4.0.0",
     "typescript": "^5.9.3",
     "vite": "^7.3.0",
-    "vue-tsc": "^3.2.1"
+    "vue-tsc": "^3.2.1",
+    "@vue/server-renderer": "^3.5.26"
   }
 }

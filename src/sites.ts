@@ -1,3 +1,18 @@
+import academicLogo from './assets/academic.png'
+import dockerLogo from './assets/docker.svg'
+import filebrowserLogo from './assets/filebrowser.svg'
+import giteaLogo from './assets/gitea.svg'
+import kmsLogo from './assets/kms.svg'
+import licaibuLogo from './assets/licaibu.svg'
+import siteLogo from './assets/logo.svg'
+import mpusherLogo from './assets/mpusher.svg'
+import projectmayLogo from './assets/projectmay.svg'
+import umamiDarkLogo from './assets/umami-dark.svg'
+import umamiLogo from './assets/umami.svg'
+import vidatDarkLogo from './assets/vidat-dark.svg'
+import vidatLogo from './assets/vidat.svg'
+import slidevLogo from './assets/slidev.svg'
+
 interface Site {
   id: string
   title: string
@@ -12,93 +27,93 @@ const siteList: Array<Site> = [
     id: 'blog',
     title: 'Blog',
     url: 'https://blog.davidz.cn/',
-    logo: '/img/logo.svg',
+    logo: siteLogo,
     description: '个人博客'
   },
   {
     id: 'academic',
     title: 'Academic',
     url: 'https://academic.davidz.cn/',
-    logo: '/img/academic.png',
+    logo: academicLogo,
     description: '个人主页'
   },
   {
     id: 'slidev',
     title: 'Slidev',
     url: 'https://notes.davidz.cn/',
-    logo: 'https://sli.dev/logo.svg',
+    logo: slidevLogo,
     description: '演示文稿'
   },
   {
     id: 'projectmay',
     title: 'ProjectMay',
     url: 'https://projectmay.davidz.cn/',
-    logo: '/img/projectmay.svg',
+    logo: projectmayLogo,
     description: '异步编排'
   },
   {
     id: 'licaibu',
     title: '理财簿',
     url: 'https://licaibu.davidz.cn/',
-    logo: '/img/licaibu.svg',
+    logo: licaibuLogo,
     description: '记录理财'
   },
   {
     id: 'file',
     title: 'FileBrowser',
     url: 'https://file.davidz.cn/',
-    logo: '/img/filebrowser.svg',
+    logo: filebrowserLogo,
     description: '私有云'
   },
   {
     id: 'umami',
     title: 'Umami',
     url: 'https://umami.davidz.cn/',
-    logo: '/img/umami.svg',
-    logoDark: '/img/umami-dark.svg',
+    logo: umamiLogo,
+    logoDark: umamiDarkLogo,
     description: '访问统计'
   },
   {
     id: 'git',
     title: 'Git',
     url: 'https://git.davidz.cn/',
-    logo: '/img/gitea.svg',
+    logo: giteaLogo,
     description: '代码托管'
   },
   {
     id: 'vidat2',
     title: 'Vidat2',
     url: 'https://vidat2.davidz.cn/',
-    logo: '/img/vidat.svg',
-    logoDark: '/img/vidat-dark.svg',
+    logo: vidatLogo,
+    logoDark: vidatDarkLogo,
     description: '视频标注'
   },
   // {
   //   id: 'iaw',
   //   title: 'IAW',
   //   url: 'https://iaw.davidz.cn/',
-  //   logo: '/img/logo.svg',
+  //   logo: siteLogo,
   //   description: '数据集'
   // },
   {
     id: 'kms',
     title: 'KMS',
     url: 'https://kms.davidz.cn/',
-    logo: '/img/kms.svg',
+    logo: kmsLogo,
     description: '激活服务'
   },
   {
     id: 'mpusher',
     title: 'MPusher',
     url: 'https://mpusher.davidz.cn/',
-    logo: '/img/mpusher.svg',
+    logo: mpusherLogo,
     description: '消息推送'
   },
   {
     id: 'docker',
     title: 'Docker',
     url: 'https://docker.davidz.cn/',
-    logo: '/img/docker.svg',
+    logo: dockerLogo,
     description: 'Docker 管理'
   }
   // {

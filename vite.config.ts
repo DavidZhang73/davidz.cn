@@ -4,6 +4,7 @@ import * as path from 'path'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
+  build: { assetsInlineLimit: 0 },
   server: {
     host: '0.0.0.0',
     open: true

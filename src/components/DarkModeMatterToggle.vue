@@ -8,6 +8,11 @@
       viewBox="0 0 24 24"
       stroke="currentColor"
       stroke-width="1.5"
+      role="button"
+      tabindex="0"
+      aria-label="Toggle color theme"
+      @keydown.enter="toggleMode"
+      @keydown.space.prevent="toggleMode"
       @click="toggleMode"
     >
       <path
@@ -38,25 +43,7 @@ import Matter, { Engine as EngineType, IEventCollision } from 'matter-js'
 
 const isDebug = false
 
-const isDark = ref(window.matchMedia('(prefers-color-scheme: dark)').matches)
-const setDarkMode = (isDark: boolean) => {
-  if (isDark) {
-    document.documentElement.classList.add('dark')
-  } else {
-    document.documentElement.classList.remove('dark')
-  }
-}
-window
-  .matchMedia('(prefers-color-scheme: dark)')
-  .addEventListener('change', event => {
-    isDark.value = event.matches
-    setDarkMode(event.matches)
-  })
-setDarkMode(isDark.value)
-const toggleMode = () => {
-  isDark.value = !isDark.value
-  setDarkMode(isDark.value)
-}
+import { isDark, toggleMode } from '../theme'
 
 const canvas = ref()
 const {

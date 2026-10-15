@@ -23,7 +23,9 @@ jobs:
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
       - name: Build
-        run: pnpm run build
+        run: |
+          pnpm run build
+          pnpm test
       - name: Deploy with ssh
         uses: easingthemes/ssh-deploy@main
         env:
