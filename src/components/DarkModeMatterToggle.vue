@@ -3,7 +3,7 @@
     <div class="cursor-grab filter invert-0 dark:invert" ref="canvas"></div>
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      class="absolute w-full inset-x-0 -top-5 mx-auto h-10 text-slate-900 dark:text-slate-200 cursor-pointer"
+      class="theme-toggle absolute w-full inset-x-0 -top-5 mx-auto h-10 text-slate-900 dark:text-slate-200 cursor-pointer"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"

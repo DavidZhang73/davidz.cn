@@ -1,7 +1,7 @@
 <template>
   <div class="relative h-[140px] w-[140px]">
     <component :is="AnimatedToggle" v-if="AnimatedToggle" />
-    <button v-else type="button" aria-label="Toggle color theme" class="absolute inset-x-0 -top-5 mx-auto h-10 w-10 cursor-pointer text-2xl" @click="toggleMode">
+    <button v-else type="button" aria-label="Toggle color theme" class="theme-toggle absolute inset-x-0 -top-5 mx-auto h-10 w-10 cursor-pointer text-2xl" @click="toggleMode">
       <span class="dark:hidden" aria-hidden="true">☀</span>
       <span class="hidden dark:inline" aria-hidden="true">☾</span>
     </button>

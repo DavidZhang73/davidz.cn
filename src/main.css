@@ -44,3 +44,14 @@
     bottom: 0;
   }
 }
+
+/* Show focus feedback for keyboard navigation without outlining pointer clicks. */
+.theme-toggle {
+  outline: none;
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
