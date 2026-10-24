@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">Academic</title>
+  <!-- Hand-redrawn vector based on the official historical PNG, not an official SVG.
+       Source: https://github.com/HugoBlox/hugo-blox-builder/blob/21e7bc8d3dbdce283f855046e8a8fc042a76db01/assets/images/icon.png
+       Redrawn 2026-10-25; original proportions, transparent cutouts and #00d1b2 retained.
+The MIT License (MIT)
+
+Copyright (c) 2016-present George Cushen
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+  -->
+  <path fill="#00d1b2" fill-rule="evenodd" d="M179 0 178 235H224V0H276V235H324V0L486 512H362L338 425H175L152 512H26ZM181 246 321 246 289 302H213ZM220 313H282L251 368Z"/>
+</svg>

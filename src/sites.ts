@@ -1,6 +1,6 @@
 import onePanelLogo from './assets/1panel.svg'
 import onePanelOverseasLogo from './assets/1panel-overseas.svg'
-import academicLogo from './assets/academic.png'
+import academicLogo from './assets/academic.svg'
 import filebrowserLogo from './assets/filebrowser.svg'
 import filebrowserOverseasLogo from './assets/filebrowser-overseas.svg'
 import kmsLogo from './assets/kms.svg'
