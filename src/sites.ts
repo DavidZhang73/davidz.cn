@@ -1,12 +1,11 @@
+import onePanelLogo from './assets/1panel.svg'
+import onePanelOverseasLogo from './assets/1panel-overseas.svg'
 import academicLogo from './assets/academic.png'
-import dockerLogo from './assets/docker.svg'
 import filebrowserLogo from './assets/filebrowser.svg'
-import giteaLogo from './assets/gitea.svg'
 import kmsLogo from './assets/kms.svg'
 import licaibuLogo from './assets/licaibu.svg'
 import siteLogo from './assets/logo.svg'
 import mpusherLogo from './assets/mpusher.svg'
-import projectmayLogo from './assets/projectmay.svg'
 import umamiDarkLogo from './assets/umami-dark.svg'
 import umamiLogo from './assets/umami.svg'
 import vidatDarkLogo from './assets/vidat-dark.svg'
@@ -45,13 +44,6 @@ const siteList: Array<Site> = [
     description: '演示文稿'
   },
   {
-    id: 'projectmay',
-    title: 'ProjectMay',
-    url: 'https://projectmay.davidz.cn/',
-    logo: projectmayLogo,
-    description: '异步编排'
-  },
-  {
     id: 'licaibu',
     title: '理财簿',
     url: 'https://licaibu.davidz.cn/',
@@ -72,13 +64,6 @@ const siteList: Array<Site> = [
     logo: umamiLogo,
     logoDark: umamiDarkLogo,
     description: '访问统计'
-  },
-  {
-    id: 'git',
-    title: 'Git',
-    url: 'https://git.davidz.cn/',
-    logo: giteaLogo,
-    description: '代码托管'
   },
   {
     id: 'vidat2',
@@ -110,12 +95,19 @@ const siteList: Array<Site> = [
     description: '消息推送'
   },
   {
-    id: 'docker',
-    title: 'Docker',
-    url: 'https://docker.davidz.cn/',
-    logo: dockerLogo,
-    description: 'Docker 管理'
-  }
+    id: '1panel',
+    title: '1Panel',
+    url: 'https://1panel.davidz.cn/',
+    logo: onePanelLogo,
+    description: '服务器管理 (CN)'
+  },
+  {
+    id: '1panel-overseas',
+    title: '1Panel',
+    url: 'https://1panel.sf.davidz.cn/',
+    logo: onePanelOverseasLogo,
+    description: '服务器管理 (US)'
+  },
   // {
   //   id: 'netdata',
   //   title: 'Netdata',
