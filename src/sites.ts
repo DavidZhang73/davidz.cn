@@ -2,6 +2,7 @@ import onePanelLogo from './assets/1panel.svg'
 import onePanelOverseasLogo from './assets/1panel-overseas.svg'
 import academicLogo from './assets/academic.png'
 import filebrowserLogo from './assets/filebrowser.svg'
+import filebrowserOverseasLogo from './assets/filebrowser-overseas.svg'
 import kmsLogo from './assets/kms.svg'
 import licaibuLogo from './assets/licaibu.svg'
 import siteLogo from './assets/logo.svg'
@@ -55,7 +56,14 @@ const siteList: Array<Site> = [
     title: 'FileBrowser',
     url: 'https://file.davidz.cn/',
     logo: filebrowserLogo,
-    description: '私有云'
+    description: '私有云 (CN)'
+  },
+  {
+    id: 'file-overseas',
+    title: 'FileBrowser',
+    url: 'https://file.sf.davidz.cn/',
+    logo: filebrowserOverseasLogo,
+    description: '私有云 (US)'
   },
   {
     id: 'umami',

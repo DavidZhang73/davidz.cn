@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg clip-rule="evenodd" fill-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision"
+     text-rendering="geometricPrecision" version="1.1" viewBox="0 0 560 560" xml:space="preserve"
+     xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style type="text/css">
+      <![CDATA[
+       .fil1 {fill:#FEFEFE}
+       .fil6 {fill:#006498}
+       .fil7 {fill:#0EA5EB}
+       .fil8 {fill:#2979FF}
+       .fil3 {fill:#2BBCFF}
+       .fil0 {fill:#455A64}
+       .fil4 {fill:#53C6FC}
+       .fil5 {fill:#BDEAFF}
+       .fil2 {fill:#332C2B;fill-opacity:0.149020}
+      ]]>
+    </style>
+  </defs>
+    <g transform="translate(-70,-70)"><path class="fil1" d="m350 71c154 0 279 125 279 279s-125 279-279 279-279-125-279-279 125-279 279-279z" fill="#fefefe"/>
+        <path class="fil2" d="m475 236 118 151c3 116-149 252-292 198l-76-99 114-156s138-95 136-94z" fill="#332c2b"
+              fill-opacity=".14902"/>
+        <path class="fil3" d="m231 211h208l38 24v246c0 5-3 8-8 8h-238c-5 0-8-3-8-8v-262c0-5 3-8 8-8z" fill="#2bbcff"/>
+        <path class="fil4" d="m231 211h208l38 24v2l-37-23h-209c-4 0-7 3-7 7v263c-1-1-1-2-1-3v-262c0-5 3-8 8-8z"
+              fill="#53c6fc"/>
+        <polygon class="fil5" points="305 212 418 212 418 310 305 310" fill="#bdeaff"/>
+        <path class="fil5" d="m255 363h189c3 0 5 2 5 4v116h-199v-116c0-2 2-4 5-4z" fill="#bdeaff"/>
+        <polygon class="fil6" points="250 470 449 470 449 483 250 483" fill="#006498"/>
+        <path class="fil6" d="m380 226h10c3 0 6 2 6 5v40c0 3-3 6-6 6h-10c-3 0-6-3-6-6v-40c0-3 3-5 6-5z" fill="#006498"/>
+        <path class="fil1" d="m254 226c10 0 17 7 17 17 0 9-7 16-17 16-9 0-17-7-17-16 0-10 8-17 17-17z" fill="#fefefe"/>
+        <g fill="#006498"><path class="fil6" d="m267 448h165c2 0 3 1 3 3 0 1-1 3-3 3h-165c-2 0-3-2-3-3 0-2 1-3 3-3z"/>
+            <path class="fil6" d="m267 415h165c2 0 3 1 3 3 0 1-1 2-3 2h-165c-2 0-3-1-3-2 0-2 1-3 3-3z"/>
+            <path class="fil6" d="m267 381h165c2 0 3 2 3 3 0 2-1 3-3 3h-165c-2 0-3-1-3-3 0-1 1-3 3-3z"/></g>
+        <path class="fil1" d="m236 472c3 0 5 2 5 5 0 2-2 4-5 4s-5-2-5-4c0-3 2-5 5-5z" fill="#fefefe"/>
+        <path class="fil1" d="m463 472c3 0 5 2 5 5 0 2-2 4-5 4s-5-2-5-4c0-3 2-5 5-5z" fill="#fefefe"/>
+        <polygon class="fil6" points="305 212 284 212 284 310 305 310" fill="#006498"/>
+        <path class="fil7" d="m477 479v2c0 5-3 8-8 8h-238c-5 0-8-3-8-8v-2c0 4 3 8 8 8h238c5 0 8-4 8-8z" fill="#0ea5eb"/>
+        <path class="fil8"
+              d="m350 70c155 0 280 125 280 280s-125 280-280 280-280-125-280-280 125-280 280-280zm0 46c129 0 234 105 234 234s-105 234-234 234-234-105-234-234 105-234 234-234z"
+              fill="#2979ff"/></g>
+  <!-- Overseas marker: same geometry and colors as 1panel-overseas.svg, scaled from 40 to 560 units. -->
+  <g transform="scale(14)">
+    <rect x="26" y="26" width="14" height="14" rx="4" fill="#3b82f6"/>
+    <path d="M30 36 36 30M30 30h6v6" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
