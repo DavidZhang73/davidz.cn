@@ -2,9 +2,9 @@
   <!-- Source: https://github.com/gtsteffaniak/filebrowser/blob/2c071d1e6eb48d4b88da2657885d345663a0a88b/frontend/public/img/icons/favicon.svg
        Version: v2.0.2-stable. SPDX-License-Identifier: Apache-2.0.
        License text: /licenses/filebrowser-quantum.txt.
-       Modified 2026-10-25: provenance comment added; external-link badge added. -->
+       Modified 2026-10-25: provenance comment added; background softened to cool gray #3F4650; external-link badge added. -->
   <!-- Background circle -->
-  <circle cx="16" cy="16" r="16" fill="#141D24"/>
+  <circle cx="16" cy="16" r="16" fill="#3F4650"/>
   
   <!-- Back folder (orange, barely higher and left) -->
   <path d="M5 8h6l2 2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2z" 
