@@ -15,3 +15,11 @@ Cards use local Vite-fingerprinted assets. Three first-row mobile icons are eage
 The inline head script applies the system color theme before paint. The preference behavior is unchanged: manual changes last for the current page session, and a system theme change updates the page.
 
 Shared Nginx cache changes are staged under [deploy/nginx](deploy/nginx/README.md) and are **not applied by CI**. They require the later coordinated server rollout. Pushing `main` still triggers the existing frontend deployment workflow; do not push until the rollout is approved.
+
+## Regional www deployment
+
+www.davidz.cn serves one build on CN and SF. Apex DNS stays at CN for SSH; web redirects are enabled separately after DNS cutover. CI verifies both staging manifests before publishing assets then HTML, retaining old hash assets and previous versions under the homepage site's .deploy directory. On failure it restores attempted origins. CI never changes DNS or web-server configuration.
+
+SF uses the existing PRIVATE_KEY only if already authorized there; preflight checks both hosts before uploads and installs no key. SF variables select ubuntu, port 22, pinned host keys, and /opt/1panel/www/sites/davidz.cn/index/.
+
+The live 00-public-static-v1.conf already recognizes www.davidz.cn. The older deploy/nginx reference is not a deployment source and must not replace live policy.

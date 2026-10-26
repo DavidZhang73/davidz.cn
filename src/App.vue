@@ -65,7 +65,7 @@
         <div
           class="line-y text-xs/6 tracking-wide text-slate-600 dark:text-slate-400 leading-6 lg:leading-10"
         >
-          CopyRight © <a href="https://davidz.cn">DavidZ</a>
+          CopyRight © <a href="/">DavidZ</a>
           •
           <a href="https://beian.miit.gov.cn/" target="_blank"
             >鲁ICP备19008089号-1</a

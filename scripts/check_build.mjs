@@ -38,3 +38,5 @@ assert(files.some(f => /^DarkModeMatterToggle-.*\.js$/.test(f)), 'Missing animat
 console.log(`PASS: 12 prerendered cards, local hashed assets, responsive theme sources, lazy images and deferred physics`)
 console.log(`Entry: ${js.length} bytes; gzip ${gzipSync(js).length}; Brotli ${brotliCompressSync(js).length}`)
 console.log(`HTML: ${Buffer.byteLength(html)} bytes; Brotli ${brotliCompressSync(html).length}`)
+
+assert(html.includes('href="/">DavidZ</a>'), 'Homepage footer must stay on its current origin')
